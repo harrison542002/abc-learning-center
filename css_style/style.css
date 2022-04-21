@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    line-height: 2;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #e4e8ed;
+}
+
+/* Header */
+
+nav {
+    background-color: rgb(54, 58, 62);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+nav .search {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    height: 35px;
+    line-height: 35px;
+}
+
+nav .search input {
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    height: 100%;
+    padding: 0px 10px;
+    width: 350px;
+    font-size: 15px;
+}
+
+nav .search span {
+    color: #ffffff;
+    font-size: 20px;
+    height: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+nav .search span:hover {
+    color: #e4e8ed;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+ul.navigation {
+    display: flex;
+    padding: 3px;
+}
+
+ul.navigation>li {
+    list-style: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+ul.navigation li a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+ul.navigation li a:hover {
+    color: #ccbe99;
+}
+
+/* Dropdown */
+ul.child {
+    display: none;
+    background-color: rgb(54, 58, 62);
+    color: white;
+    list-style: none;
+    padding: 0;
+    width: 100px;
+    margin-top: 18px;
+    position: absolute;
+    z-index: 1;
+}
+
+ul.child>li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 15px;
+}
+
+/* Main Content */
+
+h1 {
+    font-size: 2em;
+    font-family: 'Beau Rivage', cursive;
+}
+
+hr {
+    width: 75%;
+    margin: auto;
+}
+
+main {
+    margin-top: 90px;
+}
+
+.content {
+    text-align: center;
+    padding: 0 20px 20px 20px;
+}
+
+.pharses {
+    padding: 5px 50px;
+}
+
+.course {
+    display: flex;
+    position: static;
+    overflow: auto;
+}
+
+.col-narrow {
+    width: 30%;
+    float: left;
+}
+
+.col-wide {
+    width: 70%;
+    float: left;
+}
+
+h2 {
+    text-align: center;
+}
+
+.java {
+    background-color: #7a7676;
+    padding: 30px;
+    color: white;
+    margin: 20px 7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.java p {
+    font-weight: 200;
+}
+
+.course .java .img {
+    width: 150px;
+    float: left;
+    margin: 10px;
+}
+
+.net {
+    background-image: url(../img/net.jpg);
+    padding: 30px;
+    color: antiquewhite;
+    margin: 20px 0px 20px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Footer */
+footer {
+    background-color: rgb(54, 58, 62);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.info {
+    padding: 20px;
+}
+
+.footnav {
+    padding: 15px;
+    background-color: none;
+    display: flex;
+    right: 0px;
+    background-color: rgb(54, 58, 62);
+}
+
+.footnav li {
+    list-style: none;
+    padding: 15px;
+}
+
+.footnav li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footnav li a:hover {
+    color: #ccbe99;
+}
+
+.fa-twitter {
+    padding: 15px;
+    font-size: 17px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background: #f2f2f2;
+    color: #292929;
+    margin: 0px 10px 0px 0px;
+}
+
+.fa-twitter:hover {
+    background: #1569f1;
+    color: #f2f2f2;
+}
+
+.fa-facebook-f {
+    padding: 14px;
+    font-size: 20px;
+    width: 47px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background: #f2f2f2;
+    color: #292929;
+    margin: 0px 10px 0px 0px;
+}
+
+.fa-facebook-f:hover {
+    background: #104eb3;
+    color: #f2f2f2;
+}
+
+.fa-instagram {
+    padding: 13px;
+    font-size: 22px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50%;
+    background: #f2f2f2;
+    color: #292929;
+}
+
+.fa-instagram:hover {
+    color: white;
+    background: linear-gradient(to bottom left, indigo, rgb(194, 38, 38), yellow);
+}
+
+@media screen and (max-width: 900px) {
+    nav {
+        display: block;
+    }
+
+    nav .navigation {
+        display: block;
+        text-align: center;
+    }
+
+    nav .search {
+        margin-left: 100px;
+    }
+
+    main {
+        display: block;
+    }
+
+    footer {
+        display: block;
+    }
+
+    .info {
+        display: block;
+    }
+
+    .footnav {
+        display: block;
+        text-align: center;
+    }
+
+    .course {
+        display: block;
+    }
+
+    .java {
+        display: block;
+    }
+
+    #java-img {
+        margin: auto 0;
+        display: none;
+    }
+
+    .net {
+        display: block;
+    }
+
+    ul.child {
+        display: none;
+        text-align: center;
+        background-color: rgb(54, 58, 62);
+        color: white;
+        list-style: none;
+        position: static;
+        width: 100%;
+    }
+
+    ul.child {
+        padding: 5px;
+    }
+}
