@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Java .Net">
+    <meta name="description" content="Java .Net Tutorials">
+    <meta name="author" content="Aung Thiha Htun">
+    <title>Contact info</title>
+    <link rel="stylesheet" href="./css_style/contact.css">
+    <link rel="shortcut icon" href="./img/logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/dfffc10f23.js" crossorigin="anonymous"></script>
+    <script src="./javascript/jquery.js"></script>
+    <script src="./javascript/form-validation.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            <img id="logo" src="./img/logo.ico" alt="logo" />
+        </div>
+        <div class="search">
+            <input type="search" placeholder="Search">
+            <span class="fa fa-search icon"></span>
+        </div>
+        <ul class="navigation">
+            <li><a href="./index.html">Learning Center</a></li>
+            <li><a href="./courses.html">Courses</a>
+                <ul class="child">
+                    <li><a href="./course1.html">Java</a></li>
+                    <li><a href="./course2.html">.Net</a></li>
+                </ul>
+            </li>
+            <li><a href="./sitemap.html">Sitemap</a></li>
+            <li><a href="./schedule.html">Schedule</a></li>
+        </ul>
+    </nav>
+    <!-- Main -->
+    <main>
+        <article>
+            <p class="heading">
+                Contant Us
+            </p>
+
+        </article>
+        <div class="container">
+            <div class="content-1">
+                <h2> Contact Information</h2>
+                <div class="information">
+                    <p> <i class="fa-solid fa-envelope fa-lg fa-beat"></i> MailBox : <i>abclearningcenter@edu.com</i>
+                    </p>
+                    <p> <i class="fa-solid fa-map-location-dot fa-lg fa-beat"></i> Center : <i><a
+                                href="https://goo.gl/maps/K655XDXqcuNggL5Y7" target="_blank">ABC Learning Center
+                                Location</a></i></p>
+                    <br>
+                    <p class="fews"> Feel Free To Contact Us if you have any interests.</p>
+                    <p class="fews"> Our team will response you back ASAP.</p>
+                </div>
+            </div>
+            <div class="content-2">
+                <h2>Need Help ?</h2>
+                <form id="form" method="post" action="#" name="register">
+                    <label for="name"> Name
+                        <input type="text" id="name" placeholder="Enter Your Name">
+                        <span id="nameError"></span>
+                    </label>
+                    <label for="email"> Email
+                        <input type="text" id="email" placeholder="Enter Your Valid email">
+                        <span id="emailError"></span>
+                    </label>
+                    <label for="feedback"> Feedback
+                        <textarea id="feedback" name="feedback" rows="4" cols="50"
+                            placeholder="Enter Your Feedback"></textarea>
+                    </label>
+                    <!-- <div class="button"> -->
+                        <input type="submit" value="Submit" name="submit" id="submit">
+                    <!-- </div> -->
+                </form>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="info">
+            <a class="fa-brands fa-twitter" href="https://twitter.com"></a>
+            <a class="fa-brands fa-facebook-f" href="https://www.facebook.com"></a>
+            <a class="fa-brands fa-instagram" href="https://www.instagram.com"></a>
+            <p>
+                Copyright ABC Learning Center All Right Deserved &#169;
+            </p>
+        </div>
+        <ul class="footnav">
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="./policy.html">Privacy Policy</a>
+            </li>
+            <li>
+                <a href="./contact.html">Contact info</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
