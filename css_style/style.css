@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    line-height: 2;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #e4e8ed;
+}
+
+/* Main Content */
+
+h1 {
+    font-size: 2em;
+    font-family: 'Beau Rivage', cursive;
+}
+
+hr {
+    width: 75%;
+    margin: auto;
+}
+
+
+article.statment{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(../img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+}
+
+.content {
+    color: #ffff;
+    padding: 0 20px 20px 20px;
+    margin-top: 90px;
+    padding: 5px 50px 50px 50px;
+}
+
+.content > button{
+    margin-top: 10px;
+    padding : 15px;
+    background-color: #1569f1;
+    border: none;
+    border-radius: 5%;
+    font-size: 1.2em;
+    transition: all 0.5s;
+}
+
+.content > button:hover{
+    text-decoration: underline;
+    background-color: #104eb3;
+}
+button > a{
+    text-decoration: none;
+    color: #e4e8eb;
+}
+.pharses{
+    font-size: 0.9em;
+}
+
+.course {
+    display: flex;
+    position: static;
+    overflow: auto;
+}
+
+.col-narrow {
+    width: 30%;
+    float: left;
+}
+
+.col-wide {
+    width: 70%;
+    float: left;
+}
+
+.java > h2 {
+    text-align: center;
+}
+
+.java {
+    background-color: #7a7676;
+    padding: 30px;
+    color: white;
+    margin: 20px 7px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.java p {
+    font-weight: 200;
+}
+
+.course .java .img {
+    width: 150px;
+    float: left;
+    margin: 10px;
+}
+
+.net {
+    background-image: url(../img/net.jpg);
+    padding: 30px;
+    color: antiquewhite;
+    margin: 20px 0px 20px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width: 900px) {
+
+
+    main {
+        display: block;
+    }
+
+    .course {
+        display: block;
+    }
+
+    .java {
+        display: block;
+    }
+
+    #java-img {
+        margin: auto 0;
+        display: none;
+    }
+
+    .net {
+        display: block;
+    }
+
+}

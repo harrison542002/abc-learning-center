@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css_style/sign-in.css">
+    <link rel="stylesheet" href="./javascript/jquery-ui-1.11.1/jquery-ui.css">
+    <script type="text/javascript" src="./javascript/jquery-ui-1.11.1/external/jquery/jquery.js"></script>
+    <script type="text/javascript" src="./javascript/jquery-ui-1.11.1/jquery-ui.js"></script>
+    <script src="./javascript/sign-in-validate.js"></script>
+    <title>Sign-In</title>
+</head>
+<body>
+    <div id="transform">
+    <div class="img">
+        <img id="sign-in-img" src="./img/logo.ico" alt="logo">
+    </div>
+    <form id="form">
+        <label for="email">
+            Email
+            <input type="text" id="email" name="email" placeholder="Email" required>
+            <span id="emailError"></span>
+        </label>
+        <label for="password">
+            Password
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <span id="passwordError"></span>
+        </label>
+        <label><b>New Here? </b><a href="./sign-up.html"> Sign-Up</a></label>
+        <button id="sign-in-button" type="submit">Log In</button>
+    </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<style>
+    /* Header */
+.company{
+    background: none;
+    display: flex;
+    justify-content: space-between;
+}
+.company > h3 {
+    margin-left: 25em;
+    text-align: center;
+    color: #3c3e3f;
+    font-family: 'Courgette', cursive;
+}
+.company > a {
+    margin-right: 20px;
+    color: #f4efef;
+    border: solid 0.5px #7a7676;
+    padding: 0px 20px 0px 20px;
+    margin: 2px 0px 2px 0px ;
+    background-color: #818181;
+    border-radius: 5%;
+}
+.company > a:hover{
+    text-decoration: none;
+    color: #f1ecec;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+nav .search {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    height: 35px;
+    line-height: 35px;
+}
+
+nav .search input {
+    border: none;
+    outline: none;
+    background-color: #e4e8ed;
+    height: 100%;
+    padding: 0px 10px;
+    width: 350px;
+    font-size: 15px;
+    border-bottom: 1px solid #292929;
+}
+
+nav .search span {
+    color: #e4e8ed;
+    font-size: 20px;
+    height: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+nav .search span:hover {
+    color: #adafb1;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+ul.navigation {
+    display: flex;
+    padding: 3px;
+}
+
+ul.navigation>li {
+    list-style: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+ul.navigation li a {
+    font-weight: 550;
+    text-decoration: none;
+    color: #fdfdfd;
+    transition: all .5s ease-in-out;
+    padding-bottom: 5px;
+}
+
+ul.navigation li a:hover {
+    color: #cac1c1;
+    border-bottom: 1px solid #d6d3d3;
+}
+
+@media screen and (max-width:900px) {
+    nav {
+        display: block;
+    }
+    .logo img {
+        width: 35px;
+        height: 35px;
+    }
+    nav .navigation {
+        display: block;
+        text-align: center;
+    }
+
+    nav .search {
+        margin-left: 100px;
+    }
+    .company{
+        display: none;
+    }
+}
+</style>
+<div class="company">
+    <h3>ABC Learning Center</h3>
+    <a href="./sign-in.html">Sign In</a>
+</div>
+<nav>
+    <div class="logo">
+        <img id="logo" src="./img/logo.ico" alt="logo" />
+    </div>
+    <div class="search">
+        <input type="search" placeholder="Search" id="search">
+        <span class="fa fa-search icon"></span>
+    </div>
+    <ul class="navigation">
+        <li><a href="./index.html">Learning Center</a></li>
+        <li><a href="./courses.html">Courses</a></li>
+        <li><a href="./sitemap.html">Sitemap</a></li>
+        <li><a href="./schedule.html">Schedule</a></li>
+    </ul>
+</nav>

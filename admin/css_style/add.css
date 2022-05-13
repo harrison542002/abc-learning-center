@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+* {
+    margin: 0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    line-height: 2;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+div.container {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 30%;
+    margin: auto;
+    margin-top: 50px;
+    background-color: aliceblue;
+    border-radius: 2%;
+    border: 1px solid rgb(190, 186, 186);
+}
+
+label,
+input, 
+select {
+    display: block;
+}
+
+select{
+    padding: 8px;
+    font-size: 1.1em;
+    width: 90%;
+}
+
+label {
+    margin: 20px 20px 20px 40px;
+}
+
+input {
+    margin-top: 5px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    background-color: aliceblue;
+    border-bottom: 1px solid rgb(190, 186, 186);
+    border-radius: 2%;
+}
+
+button {
+    margin: 10px 20px 20px 40px;
+    padding: 10px;
+    background-color: #1569f1;
+    color: white;
+    border: none;
+    border-radius: 5%;
+    font-size: 1.05em;
+    transition: all 0.5s;
+}
+
+button:hover {
+    text-decoration: underline;
+    background-color: #104eb3;
+    color: whitesmoke;
+}
+
+span{
+    color: red;
+    font-size: 0.8em;
+    font-weight: 700;
+}
+
+@media screen and (max-width:900px) {
+    div.container {
+        display: block;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    label {
+        margin-top: 20px;
+    }
+}

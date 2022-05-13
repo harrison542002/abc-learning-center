@@ -1,0 +1,4 @@
+AuthUserFile C:\Apache24\htdocs\source_code\admin\.htpasswd
+AuthName "Admin area"
+AuthType Basic
+Require valid-user

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css_style/add.css">
+    <title>Update User Info</title>
+    <link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./jquery-ui-1.11.1/jquery-ui.css">
+    <script type="text/javascript" src="./jquery-ui-1.11.1/external/jquery/jquery.js"></script>
+    <script type="text/javascript" src="./jquery-ui-1.11.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="./edit.js"></script>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Update User Info</h1>
+    <div class="container">
+        <form action="" method="post" id="form" name="formData">
+            <label for="name">Name
+                <input type="text" id="name" placeholder="Name" name="name" required>
+                <span class="error" id="nameError"></span>
+            </label>
+            <label for="email">Email
+                <input type="text" id="email" placeholder="Email" name="email" required>
+                <span class="error" id="emailError"></span>
+            </label>
+            <label for="contact">Contact No.
+                <input type="text" id="contact" placeholder="Contact" name="contact" required>
+                <span class="error" id="contactError"></span>
+            </label>
+            <label for="courses">Choose Course
+                <select id="courses" name="course">
+                    <option>Java</option>
+                    <option>.Net</option>
+                </select>
+                <span class="error" id="contactError"></span>
+            </label>
+            <label for="country">Country
+                <select id="country" name="country">
+                    <option>Singapore</option>
+                    <option>Japan</option>
+                    <option>Indonesia</option>
+                    <option>Myanmar</option>
+                    <option>Malaysia</option>
+                    <option>Bangladesh</option>
+                </select>
+                <span class="error" id="contactError"></span>
+            </label>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+<script>
+</script>
+
+</html>

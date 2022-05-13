@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+*{
+    margin: 0;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+    line-height: 2;
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body{
+    background: url("../img/love.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+
+/* Main */
+div.container{
+    display: flex;
+    justify-content: left;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 2em;
+    font-weight: 700;
+    color: #e4e8ed;
+}
+
+div.container > article{
+    font-family: 'Courgette', cursive;
+    padding: 100px;
+    line-height: 3;
+}
+
+span{
+    color: rgb(245, 237, 167);
+}

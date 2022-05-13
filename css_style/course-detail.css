@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+* {
+    margin: 0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    line-height: 2;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #e4e8ed;
+}
+
+/* Main */
+main {
+    margin-top: 90px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+.breadcrumbs {
+    margin: 0px 15px 15px 15px;
+}
+
+.breadcrumbs>p>a {
+    color: #595757;
+    font-size: 20px;
+    padding: 0px 5px;
+    transition: all 0.5s ease-out;
+}
+
+.breadcrumbs>p>a:hover {
+    color: #2b2b2b;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+#tabs {
+    min-height: 700px;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    -webkit-box-shadow: 5px 7px 5px 0px rgba(94, 93, 94, 1);
+    -moz-box-shadow: 5px 7px 5px 0px rgba(94, 93, 94, 1);
+    box-shadow: 5px 7px 5px 0px rgba(94, 93, 94, 1);
+}
+
+#head1,
+#head2,
+#head3 {
+    border: none;
+    padding: 5px;
+}
+
+#head1:hover,
+#head2:hover,
+#head3:hover {
+    background: #dddedf;
+}
+
+#head1>a:link,
+#head2>a:link,
+#head3>a:link {
+    color: #595757;
+}
+
+#tabs>div {
+    overflow: auto;
+}
+
+#tabs>div>section {
+    margin: auto;
+    padding: 20px;
+}
+
+.ui-state-active li,
+.ui-state-active a:link,
+.ui-state-active a:visited {
+    border-bottom: 1px solid #cfcfcf;
+}
