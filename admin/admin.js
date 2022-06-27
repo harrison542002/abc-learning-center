@@ -8,7 +8,7 @@ $(document).ready(function () {
         leadsData.innerHTML = "";
         studentInformation.forEach((element, index) => {
             leadsData.innerHTML += `<tr id=row${index}>
-            <td>${index}</td>
+            <td>${index + 1}</td>
             <td>${element.name}</td>
             <td>${element.email}</td>
             <td>${element.contact}</td>

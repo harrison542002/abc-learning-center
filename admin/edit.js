@@ -79,6 +79,8 @@ $(document).ready(function () {
 
         if (error1.length <= 0 && error2.length <= 0 && error3.length <= 0) {
 
+            alert('update data succeed.')
+            window.location.replace("administration.html")
             let index = userData[5][1];
 
             let modified_data = {
@@ -91,7 +93,7 @@ $(document).ready(function () {
 
             formData.splice(index, 1, modified_data)
             localStorage.setItem("student", JSON.stringify(formData))
-            alert('update data succeed.')
+            
         }
     })
 })

@@ -9,16 +9,16 @@ $(document).ready(function () {
 
     $("form").submit(function (event) {
         event.preventDefault()
-        let error1, error2, error3, error4, error5 = ''
+        let error1, error2, error3 = ''
 
         //Email Regex
         let regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
         let contactRegex = /^\+65(6|8|9)\d{7}$/
 
         //Name Validation
-        function nameValidator(value){
+        function nameValidator(value) {
 
-            if(value.length < 5)//length specific
+            if (value.length < 5)//length specific
                 error1 = "Name need to be at least 5 characters.";
 
             else
@@ -26,27 +26,27 @@ $(document).ready(function () {
         }
 
         //Email Validation
-        function emailValidator(value){
-            if(!regex.test(value))
+        function emailValidator(value) {
+            if (!regex.test(value))
                 error2 = "Please Enter Valid Email";
 
-            else 
+            else
                 error2 = ''
         }
 
         //Contact Validation
-        function contactValidator(value){
-            if(!contactRegex.test(value))
+        function contactValidator(value) {
+            if (!contactRegex.test(value))
                 error3 = "Please Enter Valid Phone Number";
 
-            else if(checkDuplicate("contact",value,formData)){
+            else if (checkDuplicate("contact", value, formData)) {
                 error3 = "Contact no. duplicated, please try another value"
-                }
+            }
 
             else
-                error3  = ''
+                error3 = ''
         }
-        
+
         nameValidator(name.value);
         emailValidator(email.value);
         contactValidator(contact.value);
@@ -57,23 +57,25 @@ $(document).ready(function () {
             contactError.innerHTML = error3;
         }
 
-        else{
+        else {
             nameError.remove()
             emailError.remove()
             contactError.remove()
         }
 
         if (error1.length <= 0 && error2.length <= 0 && error3.length <= 0) {
+
+            alert('Add user information success')
+            window.location.replace("administration.html");
             formData.push({
-                name : name.value,
-                email : email.value,
-                contact : contact.value,
-                course : $("#courses :selected").text(),
+                name: name.value,
+                email: email.value,
+                contact: contact.value,
+                course: $("#courses :selected").text(),
                 country: $("#country :selected").text(),
             })
-            
+
             localStorage.setItem("student", JSON.stringify(formData))
-            alert('Add user information success')
         }
     })
 })
